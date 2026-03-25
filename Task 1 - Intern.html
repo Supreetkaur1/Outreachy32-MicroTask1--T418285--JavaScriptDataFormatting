@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>SUPREETKAUR - Task 1</title>
+    <title>SUPREETKAUR0602 - Task 1</title>
     <style>
         .block {
             background-color: gainsboro;
@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <h1>SUPREETKAUR- Task 1</h1>
+    <h1>SUPREETKAUR0602- Task 1</h1>
     <h2>My code:</h2>
     <p id="code" class="block"></p>
     <h2>Results of my code:</h2>
@@ -37,7 +37,7 @@
 
         // making date format as "Month Day, Year"
 
-        const formatDate = new Intl.DateTimeFormat("en-US", {
+        const correctDateFormatter = new Intl.DateTimeFormat("en-US", {
             year: "numeric",
             month: "long",
             day: "numeric"
@@ -48,25 +48,19 @@
 
             if (isNaN(date)) return "Invalid Date";
 
-            return formatDate.format(date);
+            return correctDateFormatter.format(date);
         }
 
-        
-        function formatData(item) {
+
+        function buildReadableString(item) {
             return `Article "${item.title}" (Page ID ${item.page_id}) was created at ${changeDateFormat(item.creation_date)}.`;
         }
 
         // rendering 
-        function renderData(data) {
-            const output = data
-                .map(item => `<p>${formatData(item)}</p>`)
-                .join("");
+        document.getElementById("results").innerHTML = data
+            .map(item => `<p>${buildReadableString(item)}</p>`)
+            .join("");
 
-            document.getElementById("results").innerHTML = output;
-        }
-
-        
-        renderData(data);
     </script>
     <script>
         document.getElementById("code").innerText = document.getElementById("task_id").text;
@@ -74,6 +68,3 @@
 </body>
 
 </html>
-
-
-
