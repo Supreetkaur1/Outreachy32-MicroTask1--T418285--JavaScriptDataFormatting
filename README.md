@@ -150,7 +150,7 @@ Article "André Baniwa" (Page ID 6682420) was created at September 13, 2021.
 * Submission sent via email:
 
   ```
-  Subject: [Outreachy] Supreet Kaur
+  Subject: [Outreachy] Supreetkaur0602
   ```
 * Contribution registered on the Outreachy platform
 
