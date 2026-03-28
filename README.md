@@ -1,5 +1,5 @@
 # Outreachy 32: Micro Task 1 (T418285) – JavaScript Data Formatting
-T418285: Addressing the lusophone technological wishlist proposals - Create a JavaScript script to manipulate a json object and print it in a human legible format
+[T418285](https://phabricator.wikimedia.org/T418285): Addressing the lusophone technological wishlist proposals - Create a JavaScript script to manipulate a json object and print it in a human legible format
 
 ## Task Overview
 
